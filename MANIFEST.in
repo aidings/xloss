@@ -1,0 +1,2 @@
+include src/xloss/data/*
+# recursive-include src/project *.*
