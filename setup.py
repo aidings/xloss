@@ -8,11 +8,11 @@
 from setuptools import find_packages, setup
 
 setup(name='xloss',  # 包名
-      version='0.0.1',  # 版本号
+      version='0.0.2',  # 版本号
       description='',
       long_description='',
       author='zhifeng.ding',
-      author_email='zhifeng.ding@vivo.com',
+      author_email='zhifeng.ding@hqu.edu.cn',
       url='',
       license='',
       install_requires=[],
