@@ -59,7 +59,7 @@ class AEKLLoss(nn.Module):
     
     def discriminator(self, logits_real, logits_fake, glob_step):
         disc_factor = 0 if glob_step < self.disc_iter_start else self.disc_factor
-        d_loss = disc_factor * self.real_fake_loss(logits_real, logits_fake.detach())
+        d_loss = disc_factor * self.real_fake_loss(logits_real, logits_fake)
         loss_dict = {
             "dtotal": d_loss.item(),
             "real": logits_real.mean().item(),
